@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2885/2885538.png" type="image/png">
     <title>Pictionary</title>
     <style>
         /* Zorg ervoor dat er geen marges zijn */
@@ -21,7 +20,7 @@
             z-index: 1; /* Laagste laag */
         }
         #sidebar {
-            width: 400px;
+            width: 350px;
             height: 100%;
             position: absolute;
             right: 0;
@@ -63,12 +62,12 @@
 </head>
 <body>
 
-    <iframe id="main-iframe" src="pictionarycanvas.html"></iframe>
+    <iframe id="main-iframe" src="./canvas.html"></iframe>
 
     <div id="sidebar" class="collapsed">
-        <iframe src="pictionaryword.html" scrolling="no"></iframe>
-        <iframe src="pictionaryscoreboard.html" scrolling="yes"></iframe>
-        <iframe src="pictionarytimer.html" scrolling="no"></iframe>
+        <iframe src="./word.html" scrolling="no"></iframe>
+        <iframe src="./score.html" scrolling="yes"></iframe>
+        <iframe src="./timer.html" scrolling="no"></iframe>
     </div>
 
     <img id="toggle-image" src="./settings.png" alt="Toggle Sidebar">
